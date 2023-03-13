@@ -14,7 +14,7 @@ class PaisesModel extends Model
     protected $returnType = 'array'; /* forma en que se retornan los datos */
     protected $useSoftDeletes = false; /* si hay eliminacion fisica de registro */
 
-    protected $allowedFields = ['nombre', 'estado', 'codigo','fecha_crea']; /* relacion de campos de la tabla */
+    protected $allowedFields = ['nombre', 'estado', 'Codigo','fecha_crea']; /* relacion de campos de la tabla */
 
     protected $useTimestamps = true; /*tipo de tiempo a utilizar */
     protected $createdField = 'fecha_crea'; /*fecha automatica para la creacion */

@@ -16,7 +16,7 @@ class Empleados extends BaseController
     {
         $empleados = $this->empleados->obtenerEmpleados();
 
-        $data = ['titulo' => 'Administrar Empleados', 'nombre' => 'Darell E', 'datos' => $empleados];
+        $data = ['titulo' => 'Administrar Empleados', 'nombre' => 'Camilo', 'datos' => $empleados];
         echo view('/principal/header', $data);
         echo view('/empleados/empleados', $data);
     }

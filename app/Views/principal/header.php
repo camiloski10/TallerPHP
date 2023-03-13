@@ -60,7 +60,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a href="" class="nav-link text-light disabled">Cargos</a>
+          <a href="" class="nav-link text-light">Cargos</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

@@ -16,8 +16,19 @@ class Paises extends BaseController
     {
         $paises = $this->paises->obtenerPaises();
 
-        $data = ['titulo' => 'Administrar Paises', 'nombre' => 'Darell E', 'datos' => $paises];
+        $data = ['titulo' => 'Administrar Paises', 'nombre' => 'Camilo', 'datos' => $paises];
         echo view('/principal/header', $data);
         echo view('/paises/paises', $data);
     }
-}
+    public function insertar()
+        {
+            if ($this->request->getMethod() == "post" ) {
+                
+                $this->paises->save([    
+                    'Codigo' => $this->request->getPost('Codigo'),          
+                    'nombre' => $this->request->getPost('nombre')
+                ]);
+                return redirect()->to(base_url('/paises'));
+            } 
+        }
+    }
